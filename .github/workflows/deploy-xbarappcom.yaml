@@ -1,11 +1,7 @@
 name: Build and Deploy
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: "0 0 * * 0" # every week
+  workflow_dispatch: # disabled: requires GCP credentials not present in this fork
 
 jobs:
   build-and-deploy:
